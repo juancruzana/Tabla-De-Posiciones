@@ -1,182 +1,179 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Registro de Goles y Asistencias</title>
-    <link rel="stylesheet" href="main.css">
-    <!-- <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"> -->
-    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixture</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <h1>Registro de Goles y Asistencias</h1>
 
-    <table id="registro">
     
-    <tr class="tablas">
-    <td id="tablas-td_table1">
-        <table class="table-1">
-            <h2>Equipo 1</h2>
-            <tr>
-                <th id="th-jugadores" style="width: 200px;">Jugador </th>
-                <th class="th-goles">Goles</th>
-                <th class="th-asistencias">Asistencias</th>
-            </tr>
-            <tr>
-                <td contenteditable="true">Equipo 1 - Jugador 1</td>
-                <td class="center">
-                    <button onclick="restarGol(this)">-</button>
-                    <span>0</span>
-                    <button onclick="sumarGol(this)">+</button>
-                </td>
-                <td class="center">
-                    <button onclick="restarGol(this)">-</button>
-                    <span>0</span>
-                    <button onclick="sumarGol(this)">+</button>
-                </td>
-            </tr>
-            <tr>
-                <td contenteditable="true">Equipo 1 - Jugador 2</td>
-                <td class="center">
-                    <button onclick="restarGol(this)">-</button>
-                    <span>0</span>
-                    <button onclick="sumarGol(this)">+</button>
-                </td>
-                <td class="center">
-                    <button onclick="restarGol(this)">-</button>
-                    <span>0</span>
-                    <button onclick="sumarGol(this)">+</button>
-                </td>
-            </tr>
-            <tr>
-                <td contenteditable="true">Equipo 1 - Jugador 3</td>
-                <td class="center">
-                    <button onclick="restarGol(this)">-</button>
-                    <span>0</span>
-                    <button onclick="sumarGol(this)">+</button>
-                </td>
-                <td class="center">
-                    <button onclick="restarGol(this)">-</button>
-                    <span>0</span>
-                    <button onclick="sumarGol(this)">+</button>
-                </td>
-            </tr>
-            <tr>
-                <td contenteditable="true">Equipo 1 - Jugador 4</td>
-                <td class="center">
-                    <button onclick="restarGol(this)">-</button>
-                    <span>0</span>
-                    <button onclick="sumarGol(this)">+</button>
-                </td>
-                <td class="center">
-                    <button onclick="restarGol(this)">-</button>
-                    <span>0</span>
-                    <button onclick="sumarGol(this)">+</button>
-                </td>
-            </tr>
-            <tr>
-                <td contenteditable="true">Equipo 1 - Jugador 5</td>
-                <td class="center">
-                    <button onclick="restarGol(this)">-</button>
-                    <span>0</span>
-                    <button onclick="sumarGol(this)">+</button>
-                </td>
-                <td class="center">
-                    <button onclick="restarGol(this)">-</button>
-                    <span>0</span>
-                    <button onclick="sumarGol(this)">+</button>
-                </td>
-            </tr>
+    <section class="tablas">
+
+        <table class="registro">    <!-- TABLA 1 -->
+                <tr>
+                    <th id="th-jugadores">Jugador </th>
+                    <th class="th-goles">Goles</th>
+                    <th class="th-asistencias">Asistencias</th>
+                </tr>
+                <tr>
+                    <td contenteditable="true">Equipo 1 - Jugador 1</td>
+                    <td class="center">
+                        <button onclick="restarGol(this)">-</button>
+                        <span>0</span>
+                        <button onclick="sumarGol(this)">+</button>
+                    </td>
+                    <td class="center">
+                        <button onclick="restarAsistencia(this)">-</button>
+                        <span>0</span>
+                        <button onclick="sumarAsistencia(this)">+</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td contenteditable="true">Equipo 1 - Jugador 2</td>
+                    <td class="center">
+                        <button onclick="restarGol(this)">-</button>
+                        <span>0</span>
+                        <button onclick="sumarGol(this)">+</button>
+                    </td>
+                    <td class="center">
+                        <button onclick="restarAsistencia(this)">-</button>
+                        <span>0</span>
+                        <button onclick="sumarAsistencia(this)">+</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td contenteditable="true">Equipo 1 - Jugador 3</td>
+                    <td class="center">
+                        <button onclick="restarGol(this)">-</button>
+                        <span>0</span>
+                        <button onclick="sumarGol(this)">+</button>
+                    </td>
+                    <td class="center">
+                        <button onclick="restarAsistencia(this)">-</button>
+                        <span>0</span>
+                        <button onclick="sumarAsistencia(this)">+</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td contenteditable="true">Equipo 1 - Jugador 4</td>
+                    <td class="center">
+                        <button onclick="restarGol(this)">-</button>
+                        <span>0</span>
+                        <button onclick="sumarGol(this)">+</button>
+                    </td>
+                    <td class="center">
+                        <button onclick="restarAsistencia(this)">-</button>
+                        <span>0</span>
+                        <button onclick="sumarAsistencia(this)">+</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td contenteditable="true">Equipo 1 - Jugador 5</td>
+                    <td class="center">
+                        <button onclick="restarGol(this)">-</button>
+                        <span>0</span>
+                        <button onclick="sumarGol(this)">+</button>
+                    </td>
+                    <td class="center">
+                        <button onclick="restarAsistencia(this)">-</button>
+                        <span>0</span>
+                        <button onclick="sumarAsistencia(this)">+</button>
+                    </td>
+                </tr>
         </table>
-    </td>
-    <td id="tablas-td_table2">
-        <h2>Equipo 2</h2>
-        <table class="table-2">
+
+
+        <table class="registro">    <!-- TABLA 2 -->
+
+                <tr>
+                    <th id="th-jugadores">Jugador </th>
+                    <th class="th-goles">Goles</th>
+                    <th class="th-asistencias">Asistencias</th>
+                </tr>
+                <tr>
+                    <td contenteditable="true">Equipo 2 - Jugador 1</td>
+                    <td class="center">
+                        <button onclick="restarGol(this)">-</button>
+                        <span>0</span>
+                        <button onclick="sumarGol(this)">+</button>
+                    </td>
+                    <td class="center">
+                        <button onclick="restarAsistencia(this)">-</button>
+                        <span>0</span>
+                        <button onclick="sumarAsistencia(this)">+</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td contenteditable="true">Equipo 2 - Jugador 2</td>
+                    <td class="center">
+                        <button onclick="restarGol(this)">-</button>
+                        <span>0</span>
+                        <button onclick="sumarGol(this)">+</button>
+                    </td>
+                    <td class="center">
+                        <button onclick="restarAsistencia(this)">-</button>
+                        <span>0</span>
+                        <button onclick="sumarAsistencia(this)">+</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td contenteditable="true">Equipo 2 - Jugador 3</td>
+                    <td class="center">
+                        <button onclick="restarGol(this)">-</button>
+                        <span>0</span>
+                        <button onclick="sumarGol(this)">+</button>
+                    </td>
+                    <td class="center">
+                        <button onclick="restarAsistencia(this)">-</button>
+                        <span>0</span>
+                        <button onclick="sumarAsistencia(this)">+</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td contenteditable="true">Equipo 2 - Jugador 4</td>
+                    <td class="center">
+                        <button onclick="restarGol(this)">-</button>
+                        <span>0</span>
+                        <button onclick="sumarGol(this)">+</button>
+                    </td>
+                    <td class="center">
+                        <button onclick="restarGol(this)">-</button>
+                        <span>0</span>
+                        <button onclick="sumarGol(this)">+</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td contenteditable="true">Equipo 2 - Jugador 5</td>
+                    <td class="center">
+                        <button onclick="restarGol(this)">-</button>
+                        <span>0</span>
+                        <button onclick="sumarGol(this)">+</button>
+                    </td>
+                    <td class="center">
+                        <button onclick="restarAsistencia(this)">-</button>
+                        <span>0</span>
+                        <button onclick="sumarAsistencia(this)">+</button>
+                    </td>
+                </tr>
+        </table>
+
+        <table id="tablaOrdenada">
             <tr>
                 <th>Jugador</th>
                 <th>Goles</th>
                 <th>Asistencias</th>
             </tr>
-            <tr>
-                <td contenteditable="true">Equipo 2 - Jugador 1</td>
-                <td class="center">
-                    <button onclick="restarGol(this)">-</button>
-                    <span>0</span>
-                    <button onclick="sumarGol(this)">+</button>
-                </td>
-                <td class="center">
-                    <button onclick="restarGol(this)">-</button>
-                    <span>0</span>
-                    <button onclick="sumarGol(this)">+</button>
-                </td>
-            </tr>
-            <!-- Agregar filas para los demás jugadores del Equipo 2 -->
-            <tr>
-                <td contenteditable="true">Equipo 2 - Jugador 2</td>
-                <td class="center">
-                    <button onclick="restarGol(this)">-</button>
-                    <span>0</span>
-                    <button onclick="sumarGol(this)">+</button>
-                </td>
-                <td class="center">
-                    <button onclick="restarGol(this)">-</button>
-                    <span>0</span>
-                    <button onclick="sumarGol(this)">+</button>
-                </td>
-            </tr>
-            <tr>
-                <td contenteditable="true">Equipo 2 - Jugador 3</td>
-                <td class="center">
-                    <button onclick="restarGol(this)">-</button>
-                    <span>0</span>
-                    <button onclick="sumarGol(this)">+</button>
-                </td>
-                <td class="center">
-                    <button onclick="restarGol(this)">-</button>
-                    <span>0</span>
-                    <button onclick="sumarGol(this)">+</button>
-                </td>
-            </tr>
-            <tr>
-                <td contenteditable="true">Equipo 2 - Jugador 4</td>
-                <td class="center">
-                    <button onclick="restarGol(this)">-</button>
-                    <span>0</span>
-                    <button onclick="sumarGol(this)">+</button>
-                </td>
-                <td class="center">
-                    <button onclick="restarGol(this)">-</button>
-                    <span>0</span>
-                    <button onclick="sumarGol(this)">+</button>
-                </td>
-            </tr>
-            <tr>
-                <td contenteditable="true">Equipo 2 - Jugador 5</td>
-                <td class="center">
-                    <button onclick="restarGol(this)">-</button>
-                    <span>0</span>
-                    <button onclick="sumarGol(this)">+</button>
-                </td>
-                <td class="center">
-                    <button onclick="restarGol(this)">-</button>
-                    <span>0</span>
-                    <button onclick="sumarGol(this)">+</button>
-                </td>
-            </tr>
         </table>
-    </td>
-    </tr>
-    </table>
 
-    <table id="tablaOrdenada">
-        <tr>
-            <th>Jugador</th>
-            <th>Goles</th>
-            <th>Asistencias</th>
-        </tr>
-    </table>
-
-    <script src="javascript.js"></script>
+    </section>
+    <script src="js.js"></script>
 </body>
 </html>

@@ -1,3 +1,5 @@
+// Podría agregar que las tablas Ordenadas sean ordenada con números
+
 
 
 function sumarGol(button) {
@@ -42,8 +44,7 @@ function restarAsistencia(button) {
 
 function actualizarTablaOrdenada() {
     var jugadores = [];
-    var filasJugadores = document.querySelectorAll("#registro table tr:not(:first-child)");
-    
+    var filasJugadores = document.querySelectorAll(".registro tr:not(:first-child)");
 
     filasJugadores.forEach(function (filaJugador) {
         var nombre = filaJugador.querySelector("td:first-child").innerText;
@@ -52,15 +53,14 @@ function actualizarTablaOrdenada() {
         jugadores.push({ nombre: nombre, goles: goles, asistencias: asistencias });
     });
 
-
     jugadores.sort(function (a, b) {
         var golesDiff = b.goles - a.goles;
         if (golesDiff === 0) {
             return b.asistencias - a.asistencias;
-    } else {
+        } else {
             return golesDiff;
-    }});
-
+        }
+    });
 
     var tablaOrdenada = document.getElementById("tablaOrdenada");
     tablaOrdenada.innerHTML = "";
@@ -76,27 +76,22 @@ function actualizarTablaOrdenada() {
 
     var asistenciasHeader = document.createElement("th");
     asistenciasHeader.innerText = "Asistencias";
-
     headerRow.appendChild(asistenciasHeader);
     tablaOrdenada.appendChild(headerRow);
 
-
     jugadores.forEach(function (jugador) {
-            var filaJugador = document.createElement("tr");
-            var nombreJugador = document.createElement("td");
+        var filaJugador = document.createElement("tr");
+        var nombreJugador = document.createElement("td");
+        nombreJugador.innerText = jugador.nombre;
+        filaJugador.appendChild(nombreJugador);
 
-            nombreJugador.innerText = jugador.nombre;
-            filaJugador.appendChild(nombreJugador);
+        var golesJugador = document.createElement("td");
+        golesJugador.innerText = jugador.goles;
+        filaJugador.appendChild(golesJugador);
 
-            var golesJugador = document.createElement("td");
-
-            golesJugador.innerText = jugador.goles;
-            filaJugador.appendChild(golesJugador);
-
-            var asistenciasJugador = document.createElement("td");
-
-            asistenciasJugador.innerText = jugador.asistencias;
-            filaJugador.appendChild(asistenciasJugador);
-            tablaOrdenada.appendChild(filaJugador);
-        });
+        var asistenciasJugador = document.createElement("td");
+        asistenciasJugador.innerText = jugador.asistencias;
+        filaJugador.appendChild(asistenciasJugador);
+        tablaOrdenada.appendChild(filaJugador);
+    });
 }

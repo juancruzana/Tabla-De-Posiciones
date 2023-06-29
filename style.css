@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #fffbf4;
+}
+
+h1 {
+    padding: .5em;
+    text-shadow: .1em 0px 0px #31100a;
+    font-size: 1.4em;
+    color: #fffbf4;
+    background: #7b3a1b;
+    font-weight: 9000;
+    text-align: center;
+}
+
+.tablas {
+    display: flex;
+    width: 100%;
+    flex-direction: column;    
+    flex-wrap: wrap;
+}
+
+.registro {
+    flex-grow: 1;
+    border-collapse: collapse;
+}
+
+.registro th {
+    background-color: #d2e7f7;
+    color: #31100a;
+    text-align: center;
+    padding: 10px;
+}
+
+.registro th {
+    border: 1px solid #333;
+}
+
+.tablas td {
+    padding: 10px;
+}
+
+.center {
+    text-align: center;
+}
+
+button {
+    cursor: pointer;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    border: 1.5px solid #000;
+    
+
+}
+
+
+/* Estilos SECUNDARIOS  */
+.registro th:first-child {
+    text-align: left;
+}
+
+.tablas tr:nth-child(even){
+    background: #faf0df98;
+}
+.tablas tr:hover{
+    outline: 1px solid #31100a;
+    border-radius: 2px;
+}
+
+
+
+
+
+/* --------------------------------------------------------------------------------- */
+
+#tablaOrdenada {
+    width: 100%;
+    border-collapse: collapse;
+
+}
+
+#tablaOrdenada th {
+    border: 1px solid #fff;
+    background-color: #31100a;
+    color: #fffbf4;
+    text-align: left;
+    padding: 10px;
+}
+
+#tablaOrdenada td {
+    padding: 10px;
+    /* background-color: #fff; */
+}
+
+#tablaOrdenada td.center {
+    text-align: center;
+}
+
+#tablaOrdenada button {
+    font-size: 12px;
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#tablaOrdenada button:hover {
+    background-color: #45a049;
+}
+
+#tablaOrdenada button:active {
+    background-color: #3e8e41;
+}
+
+#tablaOrdenada button:focus {
+    outline: none;
+}
+
+
+#tablaOrdenada tr:hover {
+    background-color: #d2e7f773;
+}
+
+@media (min-width: 800px){
+    .tablas {
+        flex-direction: row;
+    }
+
+    body{
+        padding: 0px 12%;
+    }
+}
