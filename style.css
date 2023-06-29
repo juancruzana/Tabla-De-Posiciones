@@ -52,16 +52,15 @@ h1 {
 
 button {
     cursor: pointer;
-    width: 2.2em;
-    height: 2.2em;
+    width: 2.4em;
+    height: 2.4em;
     border-radius: 50%;
-    border: 1.5px solid #000;
-    width: 2.2em;
-    height: 2.2em;
+    border: none;
+    outline: 1.2px solid #000;
 }
 
 button:hover {
-    background: #4aa9f1;
+    background: #73b9ee3e;
 }
 
 
@@ -141,5 +140,13 @@ button:hover {
 
     body{
         padding: 0px 12%;
+    }
+
+    button {
+        border-radius: 10%;
+        border: none;
+        outline: 1px solid #000;
+        width: 2.2em;
+        height: 2.2em;
     }
 }
