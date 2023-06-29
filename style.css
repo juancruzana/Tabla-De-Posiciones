@@ -23,6 +23,7 @@ h1 {
     width: 100%;
     flex-direction: column;    
     flex-wrap: wrap;
+    font-size: .8em;
 }
 
 .registro {
@@ -131,6 +132,7 @@ button {
 @media (min-width: 800px){
     .tablas {
         flex-direction: row;
+        font-size: .9em;
     }
 
     body{
