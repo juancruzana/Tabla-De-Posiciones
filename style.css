@@ -5,15 +5,15 @@
 }
 
 body {
-    background: #fffbf4;
+    background: #fff;
 }
 
 h1 {
     padding: .5em;
-    text-shadow: .1em 0px 0px #31100a;
-    font-size: 1.4em;
-    color: #fffbf4;
-    background: #7b3a1b;
+    /* text-shadow: .1em 0px 0px #31100a; */
+    /* font-size: 1.4em; */
+    color: #fff;
+    background: #000;
     font-weight: 9000;
     text-align: center;
 }
@@ -23,7 +23,7 @@ h1 {
     width: 100%;
     flex-direction: column;    
     flex-wrap: wrap;
-    font-size: .8em;
+    font-size: .9em;
 }
 
 .registro {
@@ -32,15 +32,22 @@ h1 {
 }
 
 .registro th {
-    background-color: #d2e7f7;
-    color: #31100a;
+    color: #000;
     text-align: center;
     padding: 10px;
+}
+
+.tabla1 th {
+    background-color: #999;
+}
+.tabla2 th {
+    background-color: #999;
 }
 
 .registro th {
     border: 1px solid #333;
 }
+
 
 .tablas td {
     padding: 10px;
@@ -60,7 +67,7 @@ button {
 }
 
 button:hover {
-    background: #73b9ee3e;
+    background: #c0c0c07b;
 }
 
 
@@ -70,9 +77,10 @@ button:hover {
 }
 
 .tablas tr:nth-child(even){
-    background: #faf0df98;
+    background: #eeeeee7c;
 }
-.tablas tr:hover{
+
+.tablas tr:not(:first-child):hover{
     outline: 1px solid #31100a;
     border-radius: 2px;
 }
@@ -90,9 +98,9 @@ button:hover {
 }
 
 #tablaOrdenada th {
-    border: 1px solid #fff;
-    background-color: #31100a;
-    color: #fffbf4;
+    border: 1px solid #696868;
+    background-color: #222;
+    color: #fff;
     text-align: left;
     padding: 10px;
 }
@@ -129,7 +137,17 @@ button:hover {
 
 
 #tablaOrdenada tr:hover {
-    background-color: #d2e7f773;
+    background-color: #d6d6d672;
+}
+
+@media (max-width: 372px){
+    .tablas{
+        font-size: .7em;
+    }
+    button{
+        width: 1.8em;
+        height: 1.8em;
+    }
 }
 
 @media (min-width: 800px){
@@ -143,10 +161,11 @@ button:hover {
     }
 
     button {
-        border-radius: 10%;
+        border-radius: 5%;
         border: none;
         outline: 1px solid #000;
         width: 2.2em;
         height: 2.2em;
     }
 }
+

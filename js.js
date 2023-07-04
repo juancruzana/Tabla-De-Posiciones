@@ -1,5 +1,6 @@
 // Podría agregar que las tablas Ordenadas sean ordenada con números
 
+// var tablaOrdenada = document.getElementById("tablaOrdenada");
 
 
 function sumarGol(button) {
@@ -7,6 +8,8 @@ function sumarGol(button) {
     var goles = parseInt(span.innerText);
 
     span.innerText = goles + 1;
+    tablaOrdenada.removeAttribute('hidden');
+
     actualizarTablaOrdenada();
 }
 
@@ -14,9 +17,10 @@ function sumarGol(button) {
 function restarGol(button) {
     var span = button.parentNode.querySelector("span");
     var goles = parseInt(span.innerText);
-
+    
     if (goles > 0) {
         span.innerText = goles - 1;
+        tablaOrdenada.removeAttribute('hidden');
         actualizarTablaOrdenada();
     }
 }
@@ -25,8 +29,9 @@ function restarGol(button) {
 function sumarAsistencia(button) {
     var span = button.parentNode.querySelector("span");
     var asistencias = parseInt(span.innerText);
-
+    
     span.innerText = asistencias + 1;
+    tablaOrdenada.removeAttribute('hidden');
     actualizarTablaOrdenada();
 }
 
@@ -37,6 +42,7 @@ function restarAsistencia(button) {
 
     if (asistencias > 0) {
         span.innerText = asistencias - 1;
+        tablaOrdenada.removeAttribute('hidden');
         actualizarTablaOrdenada();
     }
 }
@@ -62,7 +68,6 @@ function actualizarTablaOrdenada() {
         }
     });
 
-    var tablaOrdenada = document.getElementById("tablaOrdenada");
     tablaOrdenada.innerHTML = "";
 
     var headerRow = document.createElement("tr");
@@ -95,3 +100,5 @@ function actualizarTablaOrdenada() {
         tablaOrdenada.appendChild(filaJugador);
     });
 }
+
+
